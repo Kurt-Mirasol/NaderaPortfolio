@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom styles for enhanced About section */
+    .about-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border: none;
+    }
+    .about-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(184, 172, 172, 0.15);
+    }
+    .profile-img-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+    .profile-img-card:hover {
+      transform: scale(1.05);
+    }
+    .info-item {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+    .info-item:hover {
+      background: rgba(255, 255, 255, 1);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .info-item i {
+      color: #667eea;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .info-item:hover i {
+      color: #764ba2;
+      transform: scale(1.1);
+    }
+    .education-card {
+      background: linear-gradient(135deg, #fff 0%, #f1f3f4 100%);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      height: 100%;
+    }
+    .education-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .education-card .icon {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .education-card:hover .icon {
+      transform: scale(1.1);
+    }
+    .section-title h2 {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .section-title p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #989191;
+    }
+    .content h2 {
+      color: #000000;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      line-height: 1.7;
+      color: #000000;
+    }
+    .education-title {
+      color: #000000;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="../assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Raven</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="#about" class="active"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="../projects/projects.html"><i class="bi bi-folder2-open navicon"></i> Projects</a></li>
+        <li><a href="../contact/contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I'm Raven — a passionate UI/UX designer and web developer who loves building digital experiences that are both beautiful and functional. I aim to create designs that not only look good but also make users’ lives easier through thoughtful, user-centered design and clean, efficient code.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-img-card">
+              <img src="../assets/img/my-profile-img.jpg" class="img-fluid" alt="Raven profile picture">
+            </div>
+          </div>
+          <div class="col-lg-8 content" data-aos="slide-up" data-aos-delay="300">
+            <div class="about-card">
+              <p class="role-title">UI/UX Designer & Web Developer</p>
+              <p class="fst-italic py-3">
+                I focus on crafting seamless user experiences and responsive web designs using tools like Figma, HTML, CSS, and JavaScript. My goal is to bring ideas to life through creative and efficient solutions.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="info-item">
+                    <i class="bi bi-calendar-event"></i>
+                    <div><strong>Birthday:</strong> <span>July 3, 2006</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div><strong>City:</strong> <span>Pangantucan, Bukidnon, Philippines</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-mortarboard"></i>
+                    <div><strong>Degree:</strong> <span>BS Information Technology (Ongoing)</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-envelope"></i>
+                    <div><strong>Email:</strong> <span>firstbread0@gmail.com</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="info-item">
+                    <i class="bi bi-globe"></i>
+                    <div><strong>Website:</strong> <span>raven-portfolio.netlify.app</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-telephone"></i>
+                    <div><strong>Phone:</strong> <span>+63 954 075 0419</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-briefcase"></i>
+                    <div><strong>Freelance:</strong> <span>Available</span></div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-eye"></i>
+                    <div><strong>Focus:</strong> <span>Front-End Development & UX Design</span></div>
+                  </div>
+                </div>
+              </div>
+              <p class="py-3">
+                I enjoy creating clean layouts, experimenting with new design trends, and exploring modern web frameworks. Each project is an opportunity to challenge myself and grow as both a designer and a developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="education-title" data-aos="zoom-in" data-aos-delay="250">Education Background</h3>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
+            <div class="education-card">
+              <div class="icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h4>Bachelor of Science in Information Technology</h4>
+              <p>Bukidnon State University<br>2025 – Present</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="350">
+            <div class="education-card">
+              <div class="icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h4>Senior High School – STEM Strand</h4>
+              <p>Pangantucan Community High School (PCHS)<br>Graduated: 2025</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="400">
+            <div class="education-card">
+              <div class="icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h4>Junior High School</h4>
+              <p>Pangantucan Community High School (PCHS)<br>Graduated: 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

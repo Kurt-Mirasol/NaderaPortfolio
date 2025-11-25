@@ -1,15 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,22 +7,22 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+:root {
+  --background-color: #0e0e0e; /* Background color for the entire website, including individual sections */
+  --default-color: #d1d1d1; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #f2f2f2; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0d6efd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #1f1f1f; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-color: #d1d1d1;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-mobile-background-color: #080808; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #080808; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #d1d1d1; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -46,10 +35,69 @@
 
 .dark-background {
   --background-color: #040b14;
-  --default-color: #ffffff;
+  --default-color: #dcdcdc;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
+}
+
+/* Dark mode text color overrides for consistency */
+.dark-background .testimonial-item h3 {
+  color: #ffffff;
+}
+
+.dark-background .testimonial-item h4 {
+  color: #cfcfcf;
+}
+
+.dark-background .testimonial-item p {
+  color: #dcdcdc;
+}
+
+.dark-background .about .content h2 {
+  color: #ffffff;
+}
+
+.dark-background .about .content p {
+  color: #dcdcdc;
+}
+
+.dark-background .about .info-item strong,
+.dark-background .about .info-item span {
+  color: #cfcfcf;
+}
+
+.dark-background .about .education-title {
+  color: #ffffff;
+}
+
+.dark-background .about .education-card h4,
+.dark-background .about .education-card p {
+  color: #dcdcdc;
+}
+
+/* Light text overrides for About section */
+#about *,
+.about *,
+.about-details *,
+.education-item *,
+.role-title {
+  color: #000000 !important;
+}
+
+#about p {
+  color: #918282 !important;
+}
+
+#about strong,
+#about span {
+  color: #000000 !important;
+}
+
+#about h2,
+#about h3,
+#about h4 {
+  color: #000000 !important;
 }
 
 /* Smooth scroll */
@@ -522,6 +570,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  text-align: center;
 }
 
 .section-title h2:after {
@@ -1272,4 +1321,59 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* FIXED LAYOUT, CLEAN SPACING */
+.section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.project-card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.resume-box {
+  padding: 20px;
+  border-left: 3px solid #0d6efd;
+  background: #1a1a1a;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.service-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
